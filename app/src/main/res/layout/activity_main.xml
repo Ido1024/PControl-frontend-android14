@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_move_to_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/button_keyboard"
+            android:onClick="keyboardButtonClicked" />
+        <!--the view below made to do space between the buttons -'left click' and 'right click'-->
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.01" />
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/button_help"
+            android:onClick="helpButtonClicked" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.01" />
+
+        <Button
+            android:id="@+id/button_move_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/button_login"
+            android:onClick="LoginButtonClicked" />
+    </LinearLayout>
+
+    <com.example.pcontrol_2.DrawView
+        android:id="@+id/TouchPadAreaView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="4"
+        android:background="#FF808080" />
+
+    <!--the view below made to do space between the buttons -
+    'left click' and 'right click' to the 'mouse pad' area-->
+    <View
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.05" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.example.pcontrol_2.MouseLeftClick
+            android:id="@+id/leftClick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFA9A9A9"
+            android:hint="@string/button_left_click" />
+        <!--the view below made to do space between the buttons -'left click' and 'right click'-->
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.01" />
+
+        <com.example.pcontrol_2.MouseRightClick
+            android:id="@+id/rightClick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFA9A9A9"
+            android:hint="@string/button_right_click" />
+    </LinearLayout>
+</LinearLayout>

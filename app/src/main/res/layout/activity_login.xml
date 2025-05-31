@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/button_login"
+            android:onClick="ipAndPortButtonClicked" />-->
+        <!--the view below made to do space between the buttons -'left click' and 'right click'-->
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.01" />
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/button_logout"
+            android:onClick="logoutButtonClicked" />-->
+        <!--the view below made to do space between the buttons -'left click' and 'right click'-->
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/port_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_text_port"
+        android:digits="0123456789"
+        android:inputType="numberDecimal"
+        android:text="5657"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/ip_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/ip_text_host"
+        android:digits="0123456789."
+        android:inputType="number|numberDecimal"
+        android:text="192.168.1.239"
+        android:minHeight="48dp" />
+
+    <!--    back button stays down, no matter what-->
+    <RelativeLayout
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/button_back"
+        android:onClick="backButtonClicked" />
+</LinearLayout>

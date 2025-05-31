@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".KeyboardActivity">
+
+
+    <Button
+        android:id="@+id/button_send_to_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/button_keyboard_send_msg"
+        android:onClick="sendMsgToServerButtonClicked" />
+    <!-- android:gravity="top|start" = "enter message(hint) will be top left(=start) -->
+    <EditText
+        android:id="@+id/msg_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="top|start"
+        android:hint="@string/message_keyboard"
+        android:minHeight="48dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/button_enter"
+            android:onClick="sendPressEnterToServerButtonClicked" />
+
+        <!--the view below made to do space between the buttons -'left click' and 'right click'-->
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.01" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/button_delete"
+            android:onClick="sendPressDeleteToServerButtonClicked" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/button_back"
+        android:onClick="backButtonClicked" />
+</LinearLayout>

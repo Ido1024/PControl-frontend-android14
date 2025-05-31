@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PControl_2</string>
+    <string name="button_info">press</string>
+    <string name="button_back">back</string>
+    <string name="button_keyboard">keyboard</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_enter">Enter</string>
+    <string name="button_keyboard_send_msg">Send The Message</string>
+    <string name="message_keyboard">Enter message...</string>
+    <string name="button_login">login</string>
+    <string name="button_help">help</string>
+    <string name="button_left_click">left Click</string>
+    <string name="button_right_click">right Click</string>
+    <string name="ip_text_host">Enter ip</string>
+    <string name="edit_text_port">Enter port</string>
+    <string name="sendToServer_text_host">Enter message</string>
+    <string name="button_logout">logout</string>
+    <string name="button_search_for_ip">search for ip</string>
+</resources>
